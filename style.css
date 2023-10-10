@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  height: 1024px;
+  background-image: url(img/top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top__haeder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.top__title {
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 700;
+  padding-top: 217px;
+  padding-bottom: 32px;
+}
+.top__button {
+  width: 234px;
+  height: 49px;
+  font-size: 18px;
+  border: 1px solid #9C0332;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+}
+
+.text {
+  width: 481px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 44px;
+}
+.text__world {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.for {
+  background-image: url(img/for.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.for__item {
+  height: 300px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.for__item_1 {
+  background-image: url(img/for1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: span 4;
+}
+.for__item_2 {
+  background-image: url(img/for2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: span 4;
+}
+.for__item_3 {
+  background-image: url(img/for3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column: span 4;
+}/*# sourceMappingURL=style.css.map */
