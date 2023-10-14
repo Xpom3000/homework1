@@ -1,4 +1,4 @@
-/*alert('эзадание 1');
+alert('эзадание 1');
 let a = 10;
 alert(a);
 alert(a * 2);
@@ -37,7 +37,7 @@ num *= 7;
 num /= 3;
 num++;
 num--;
-alert(num);*/
+alert(num);
 
 alert('эзадание 8');
 let age = Number(prompt("Сколько вам лет"));
