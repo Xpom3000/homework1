@@ -1,4 +1,4 @@
-alert('эзадание 1');
+/*alert('эзадание 1');
 let a = 10;
 alert(a);
 alert(a * 2);
@@ -41,10 +41,18 @@ alert(num);
 
 alert('эзадание 8');
 let age = Number(prompt("Сколько вам лет"));
-alert(`Ваш возраст ${age}`);
+alert(`Ваш возраст ${age}`);*/
 
 alert('эзадание 9');
-
+const user = {
+    name:"Игорь",
+    age: 35,
+    isAdmin: true
+}
+console.log(user.name);
+console.log(user.age);
+console.log(user.isAdmin);    
+.
 
 
 alert(`эзадание 10`);
