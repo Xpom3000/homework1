@@ -43,6 +43,7 @@ a {
         font-size: 18px;
         border: 1px solid #9C0332;
         border-radius: 30px;
+        padding: (13px 74px 13px 74px);
         background: #9C0332;
         color: #FFF; 
         box-sizing: border-box;
@@ -90,13 +91,13 @@ a {
         flex-wrap: wrap;
         align-items: flex-end;
         justify-content: flex-start;
+        border-radius: 16px;
         &_1 {
             background-image: url(img/for1.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            grid-column: span 4
-
+            grid-column: span 4;
         }
         &_2 {
             background-image: url(img/for2.jpg);
