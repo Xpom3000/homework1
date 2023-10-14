@@ -1,4 +1,4 @@
-/*alert('эзадание 1');
+alert('эзадание 1');
 let a = 10;
 alert(a);
 alert(a * 2);
@@ -41,7 +41,7 @@ alert(num);
 
 alert('эзадание 8');
 let age = Number(prompt("Сколько вам лет"));
-alert(`Ваш возраст ${age}`);*/
+alert(`Ваш возраст ${age}`);
 
 alert('эзадание 9');
 const user = {
@@ -52,7 +52,15 @@ const user = {
 console.log(user.name);
 console.log(user.age);
 console.log(user.isAdmin);    
-.
-
+user['city of residence'] = true;
+console.log(user['city of residence']);
+user.age = 37;
+console.log(user.age);
+delete user['city of residence'];
+console.log(user['city of residence']);
+let info = prompt("Какую информацию хотите узнать о пользователе?")
+alert(user[info]);
 
 alert(`эзадание 10`);
+let name = prompt('Как тебя зовут');
+alert(`Привет, ${name}!`);
