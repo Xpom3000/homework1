@@ -1,14 +1,15 @@
 alert('эзадание 1');
 let a = 10;
 alert(a);
-alert(a * 2);
+a = 20;
+alert(a);
 
 alert('эзадание 2');
-let yaer = ('2007 год выпуска первого Iphone');
-alert(yaer);
+const year = ('2007 год выпуска первого Iphone');
+alert(year);
 
 alert('эзадание 3');
-let name = ('Брендан Эйх создатель JavaScript');
+const name = ('Брендан Эйх создатель JavaScript');
 alert(name);
 
 alert('эзадание 4');
@@ -40,7 +41,7 @@ num--;
 alert(num);
 
 alert('эзадание 8');
-let age = Number(prompt("Сколько вам лет"));
+const age = Number(prompt("Сколько вам лет"));
 alert(`Ваш возраст ${age}`);
 
 alert('эзадание 9');
@@ -62,5 +63,5 @@ let info = prompt("Какую информацию хотите узнать о 
 alert(user[info]);
 
 alert(`эзадание 10`);
-let name = prompt('Как тебя зовут');
-alert(`Привет, ${name}!`);
+names = prompt('Как тебя зовут');
+alert(`Привет, ${names}!`);
