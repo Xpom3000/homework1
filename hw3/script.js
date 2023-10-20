@@ -1,4 +1,4 @@
-/*alert('эзадание 1');
+alert('эзадание 1');
 let password = (1234);
 const password2 = String(prompt("Введите пороль"));
 if (password == password2) {
@@ -25,10 +25,10 @@ alert('эзадание 3');
 let d = Number(prompt("Введите превое число"));
 let e = Number(prompt("Введите второе число"))
 d > 100 || e > 100? console.log("Верно"): console.log("Неверно");
-*//*alert('эзадание 4');
+alert('эзадание 4');
 let a = '2';
 let b = '3';
-if  (isNaN(a) && isNaN(b)) { alert(a + b) }*/
+if  (isNaN(a) && isNaN(b)) { alert(a + b) }
 
 alert('эзадание 5');
 let monthNumber = String(prompt('Ведите номер месяца'));
