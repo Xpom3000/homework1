@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    .center{
+        padding-left: 16px;
+        padding-right: 16px; 
+    }
+
+    .top {
+        &__header {
+            text-align: center;
+        } 
+        &__title {
+            font-size: 32px;
+        }
+        &__button {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .text {
+        font-size: 14px;
+        &__world {
+            font-size: 14px;
+        }
+    }
+    .for {
+        &__item {
+            grid-column:1 / -1;
+        }
+    }
+}
