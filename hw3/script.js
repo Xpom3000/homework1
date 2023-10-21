@@ -1,7 +1,7 @@
-/*
+
 alert('эзадание 1');
 let password = (1234);
-const password2 = String(prompt("Введите пороль"));
+const password2 = prompt("Введите пороль");
 if (password == password2) {
     alert("Пароль введен верно");
 }
@@ -22,7 +22,7 @@ let с = Number(prompt("Введите число "));
 с = 2;
 0 <= с && с <= 10? console.log("Верно"): console.log("Неверно");
 
-alert('эзадание 3');
+alert('задание 3');
 let d = Number(prompt("Введите превое число"));
 let e = Number(prompt("Введите второе число"))
 d > 100 || e > 100? console.log("Верно"): console.log("Неверно");
@@ -59,8 +59,4 @@ switch (monthNumber) {
 default:
     console.log('Нет такого месяца')
     break;
-}
-*/
-
-alert('эзадание 7');
-let num = prompt('Введите любое число');
+}  

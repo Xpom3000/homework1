@@ -1,9 +1,4 @@
-/*
-body {
-    cursor:hover {
-        background-color: transparent;
-    }
-}*/
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +48,7 @@ a {
         box-sizing: border-box;
         text-align: center;
         outline: none;
-        cursor: url(img/cursor-hand-line.svg) 2 2, pointer;
+        cursor: url(img/cursor-hand-line.svg) 4 1, pointer;
        
     }
 
@@ -76,8 +71,7 @@ a {
         color: #FFF;
         font-size: 18px;
         font-weight: 300;
-        line-height: 32px;
-        
+        line-height: 32px;  
     }
 }
 .for {
@@ -103,7 +97,7 @@ a {
         align-items: flex-end;
         justify-content: flex-start;
         border-radius: 16px;
-        cursor: url(img/cursor-hand-line.svg) 2 2, pointer;
+        cursor: url(img/cursor-hand-line.svg) 4 1, pointer;
        
         &:hover {
             border: 3px solid #44D2FF;

@@ -1,9 +1,3 @@
-/*
-body {
-    cursor:hover {
-        background-color: transparent;
-    }
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +48,7 @@ a {
   box-sizing: border-box;
   text-align: center;
   outline: none;
-  cursor: url(img/cursor-hand-line.svg) 2 2, pointer;
+  cursor: url(img/cursor-hand-line.svg) 4 1, pointer;
 }
 
 .text {
@@ -103,7 +97,7 @@ a {
   align-items: flex-end;
   justify-content: flex-start;
   border-radius: 16px;
-  cursor: url(img/cursor-hand-line.svg) 2 2, pointer;
+  cursor: url(img/cursor-hand-line.svg) 4 1, pointer;
 }
 .for__item:hover {
   border: 3px solid #44D2FF;
@@ -193,5 +187,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .for__svg {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
