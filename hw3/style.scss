@@ -59,7 +59,7 @@ a {
 
 }
 .text {
-    //width: 481px;
+    width: 481px;
     color: #FFF;
     font-size: 18px;
     font-weight: 300;
@@ -70,6 +70,14 @@ a {
         font-size: 18px;
         font-weight: 700;
         line-height: 32px;
+    }
+    &__box {
+        width: 584px;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        
     }
 }
 .for {
@@ -124,5 +132,28 @@ a {
             grid-column: span 4
         }
     }
+    &__box {
+        background-image: url(img/for_box.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 282px;
+        padding-bottom: 282px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-right: 135px;
+    }
 }
+.title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+}
+
 @import 'mobile';
