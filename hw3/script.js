@@ -1,3 +1,4 @@
+/*
 alert('эзадание 1');
 let password = (1234);
 const password2 = String(prompt("Введите пороль"));
@@ -59,3 +60,7 @@ default:
     console.log('Нет такого месяца')
     break;
 }
+*/
+
+alert('эзадание 7');
+let num = prompt('Введите любое число');
