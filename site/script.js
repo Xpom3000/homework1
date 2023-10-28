@@ -63,12 +63,20 @@ console.log(flat);
 
 
 alert('эзадание 10');
+let array6 = [2, 4, 10, 5, 8, 9];
+for (let i = 0; i < array6.length - 1; i++) {
+    const element = (array6[i] + array6[i + 1]);
+    console.log(element);
+}
+
+
+alert('эзадание 11');
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const squares = nums.map(num => num **2);
 console.log(squares);
 
 
-alert('эзадание 11');
+alert('эзадание 12');
 //вар.1
 const  str1= ['слово', '', 'слог', 'длинное предложение', 'буква'];
 const lengths = str1.map(item => item.length);
@@ -78,7 +86,7 @@ const  str2 = ['слово', '', 'слог', 'длинное предложен�
 console.log(str2);
 
 
-alert('эзадание 12');
+alert('эзадание 13');
 function filterPositive(array) {
     let newarray = array.filter(n => n < 0)
     console.log(newarray);
@@ -87,4 +95,5 @@ function filterPositive(array) {
   filterPositive([-1, 0, 5, -10, 56]); 
   filterPositive([-25, 25, 0, -1000, -2])
 
- 
+
+
