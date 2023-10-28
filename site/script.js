@@ -15,15 +15,12 @@ console.log(comparison(5, 5));
  
 alert('Задание 2');
 let num = prompt("Введите число");
-
 if (num % 2 == 0) {
-
     function printMessage() {
        return "Число чётное" ;
     }
 
 } else {
-
     function printMessage() {
         return "Число нечётное";
     }
@@ -32,6 +29,7 @@ if (num % 2 == 0) {
 console.log(printMessage());
 
 alert('Задание 3');
+//3.1
 function multip(a) {
     return a*a;
 }
@@ -39,3 +37,12 @@ function multip(a) {
 console.log(multip(6));
 console.log(multip(12));
 console.log(multip(10));
+
+//3.2
+function multip(a) {
+    return a*a;
+}
+
+multip(6);
+multip(12);
+multip(10);
