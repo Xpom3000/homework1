@@ -96,4 +96,22 @@ function filterPositive(array) {
   filterPositive([-25, 25, 0, -1000, -2])
 
 
+alert('эзадание 14');
+const start = [];
+for (let i = 0; i < 10; i++) {
+    start.push(Math.floor(Math.random() * 11));
 
+}
+
+const elem = start.filter(i => i % 2 === 0);
+console.log(`Исходный ${start}`);
+console.log(`Только четные ${elem}`)
+
+
+alert('эзадание 15');
+const startStart = [];
+for (let i = 0; i < 6; i++) {
+    startStart.push(1 + Math.floor(Math.random() * 11));
+}
+
+console.log(startStart.reduce((a, i) => a + i) / startStart.length);
