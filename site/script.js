@@ -1,4 +1,4 @@
-
+/*
 alert('эзадание 1');
 function  comparison (a, b) {
     if (a <= b){
@@ -46,3 +46,107 @@ function multip(a) {
 multip(6);
 multip(12);
 multip(10);
+*/
+
+alert('Задание 4');
+let num1 = prompt("Сколько Вам лет");
+if (num1 < 0) {
+    function printMessage() {
+        return "Вы ввели неправильное значение" ;
+     }
+} if (0 < num1 <= 12) {
+    function printMessage() {
+       return "Привет, друг!" ;
+    }
+
+} if (num1 >= 13) {
+    function printMessage() {
+        return "Добро пожаловать!";
+    }
+}
+alert(printMessage());
+
+//
+alert('Задание 5');
+const printMessage = (a, b) => {
+    if ( isNaN(a && b)) {
+        return "Одно или оба значения не являются числом";
+        
+    } else {
+        return a * b;
+    }    
+}
+alert(printMessage(prompt("Введите первое число"), prompt("Введите второе число")));
+
+
+alert('Задание 6');
+const num2 = (n) => {
+    if (isNaN(n)) {   
+        return 'Переданный параметр не является числом';
+    } if(0 <= n <= 10) {
+        return n**3 ;
+    } 
+}
+alert(num2(prompt("Введите число")));
+
+*/
+alert('Задание 7');
+let munth = prompt("Введите номер месяца");
+if (munth === 12 && 1 && 2 ) {
+    function seasons() {
+        return "Зимма" ;
+    }
+    
+}else if (munth === 3 && 4 && 5 ) {
+    function seasons() {
+       return "Весна!" ;
+    }
+
+} else if (munth === 6 && 7 && 8 ) {
+    function seasons() {
+        return "Лето";
+    }
+    
+}else if (munth === 9 && 10 && 11 ) {
+    function seasons() {
+        return "Осень";
+    }
+}
+alert(seasons());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+alert('Задание 6');
+let n = prompt("Введите число");
+
+if (n === isNaN) {
+    function result() {
+        return "это значение не являются числом" ;
+    }
+    
+} else  {
+    function result() {
+       return n ** 3 ;
+    }
+
+}
+alert(result());
+*/
