@@ -1,4 +1,4 @@
-/*
+
 alert('эзадание 1');
 function  comparison (a, b) {
     if (a <= b){
@@ -13,6 +13,7 @@ function  comparison (a, b) {
  console.log(comparison(7, 3));
 console.log(comparison(5, 5));
  
+
 alert('Задание 2');
 let num = prompt("Введите число");
 if (num % 2 == 0) {
@@ -27,6 +28,7 @@ if (num % 2 == 0) {
 }
 
 console.log(printMessage());
+
 
 alert('Задание 3');
 //3.1
@@ -46,7 +48,7 @@ function multip(a) {
 multip(6);
 multip(12);
 multip(10);
-*/
+
 
 alert('Задание 4');
 let num1 = prompt("Сколько Вам лет");
@@ -66,7 +68,7 @@ if (num1 < 0) {
 }
 alert(printMessage());
 
-//
+
 alert('Задание 5');
 const printMessage = (a, b) => {
     if ( isNaN(a && b)) {
@@ -89,30 +91,26 @@ const num2 = (n) => {
 }
 alert(num2(prompt("Введите число")));
 
-*/
-alert('Задание 7');
-let munth = prompt("Введите номер месяца");
-if (munth === 12 && 1 && 2 ) {
-    function seasons() {
-        return "Зимма" ;
-    }
-    
-}else if (munth === 3 && 4 && 5 ) {
-    function seasons() {
-       return "Весна!" ;
-    }
 
-} else if (munth === 6 && 7 && 8 ) {
-    function seasons() {
+alert('Задание 7');
+
+function seasons(munth) {
+    if (munth >= 3 && munth <= 5) {
+        return "Весна!";
+
+    } else if (munth >= 6 && munth <= 8) {
         return "Лето";
-    }
-    
-}else if (munth === 9 && 10 && 11 ) {
-    function seasons() {
+        
+    } else if (munth >= 9 && munth <= 11) {
         return "Осень";
-    }
+    
+    } else if (munth == 12 || munth == 1 || munth == 2) {
+        return "Зимма";
+    }    
+    
 }
-alert(seasons());
+alert(seasons(prompt("Введите номер месяца")));
+
 
 
 
