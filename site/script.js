@@ -85,7 +85,7 @@ alert('Задание 6');
 const num2 = (n) => {
     if (isNaN(n)) {   
         return 'Переданный параметр не является числом';
-    } if(0 <= n <= 10) {
+    } if(n >= 0 && n <= 10) {
         return n**3 ;
     } 
 }
@@ -111,40 +111,3 @@ function seasons(munth) {
 }
 alert(seasons(prompt("Введите номер месяца")));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-alert('Задание 6');
-let n = prompt("Введите число");
-
-if (n === isNaN) {
-    function result() {
-        return "это значение не являются числом" ;
-    }
-    
-} else  {
-    function result() {
-       return n ** 3 ;
-    }
-
-}
-alert(result());
-*/
