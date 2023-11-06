@@ -1,4 +1,4 @@
-
+/*
 alert('эзадание 1');
 function  comparison (a, b) {
     if (a <= b){
@@ -12,23 +12,22 @@ function  comparison (a, b) {
  console.log(comparison(4, 6));
  console.log(comparison(7, 3));
 console.log(comparison(5, 5));
- 
+
 
 alert('Задание 2');
-let num = prompt("Введите число");
-if (num % 2 == 0) {
-    function printMessage() {
-       return "Число чётное" ;
-    }
+function printMessage(num) {
+    if (num % 2 == 0) { {
+            return "Число чётное";
+        }
 
-} else {
-    function printMessage() {
-        return "Число нечётное";
+    } else {{
+            return "Число нечётное";
+        }
     }
 }
 
-console.log(printMessage());
-
+console.log(printMessage(prompt("Введите число")));
+ 
 
 alert('Задание 3');
 //3.1
@@ -51,27 +50,25 @@ multip(10);
 
 
 alert('Задание 4');
-let num1 = prompt("Сколько Вам лет");
-if (num1 < 0) {
-    function printMessage() {
-        return "Вы ввели неправильное значение" ;
-     }
-} if (0 < num1 <= 12) {
-    function printMessage() {
-       return "Привет, друг!" ;
-    }
-
-} if (num1 >= 13) {
-    function printMessage() {
+function printMessage(num1) {
+    if (num1 < 0) {
+        return "Вы ввели неправильное значение";
+        
+    }if (num1 >= 0 && num1 <= 12) {
+        return "Привет, друг!";
+        
+    }if (num1 >= 13) {
         return "Добро пожаловать!";
+        
     }
 }
-alert(printMessage());
+
+alert(printMessage(prompt("Сколько Вам лет")));
 
 
 alert('Задание 5');
 const printMessage = (a, b) => {
-    if ( isNaN(a && b)) {
+    if ( isNaN(a) || isNaN(b)) {
         return "Одно или оба значения не являются числом";
         
     } else {
@@ -91,23 +88,9 @@ const num2 = (n) => {
 }
 alert(num2(prompt("Введите число")));
 
-
+*/
 alert('Задание 7');
 
-function seasons(munth) {
-    if (munth >= 3 && munth <= 5) {
-        return "Весна!";
 
-    } else if (munth >= 6 && munth <= 8) {
-        return "Лето";
-        
-    } else if (munth >= 9 && munth <= 11) {
-        return "Осень";
-    
-    } else if (munth == 12 || munth == 1 || munth == 2) {
-        return "Зимма";
-    }    
-    
-}
-alert(seasons(prompt("Введите номер месяца")));
+
 
