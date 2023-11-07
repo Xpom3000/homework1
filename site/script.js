@@ -90,6 +90,16 @@ alert(num2(prompt("Введите число")));
 
 */
 alert('Задание 7');
+function (params) {
+}  
+
+const circle = {
+    circle1: radius // первый объект
+    circle2;// второй объект
+}
+    radius; //свойство
+    getArea = 3.14 * radius ** 2; // которое возвращает площадь круга через радиус
+ getPerimeter = 2 * 3.14 * radius; // который возвращает периметр окружности.
 
 
 
