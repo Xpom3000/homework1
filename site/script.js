@@ -1,4 +1,4 @@
-/*
+
 alert('эзадание 1');
 function  comparison (a, b) {
     if (a <= b){
@@ -88,18 +88,32 @@ const num2 = (n) => {
 }
 alert(num2(prompt("Введите число")));
 
-*/
+
 alert('Задание 7');
-function (params) {
+function squer () {
+    return this.radius **2 * 3.14;
 }  
 
-const circle = {
-    circle1: radius // первый объект
-    circle2;// второй объект
+function perimetr () {
+    return this.radius * 2 * 3.14;
 }
-    radius; //свойство
-    getArea = 3.14 * radius ** 2; // которое возвращает площадь круга через радиус
- getPerimeter = 2 * 3.14 * radius; // который возвращает периметр окружности.
+const circle1 = {
+    radius: 25,
+    getArea: squer,
+    getPerimeter: perimetr,
+    
+    }
+    
+const circle2 = {
+    radius: 15,
+    getArea: squer,
+    getPerimeter: perimetr,
+    }
+   
+console.log(`S1 = ${circle1.getArea()}`);
+console.log(`P1 = ${circle1.getPerimeter()}`);
+console.log(`S2 = ${circle2.getArea()}`);
+console.log(`P2 = ${circle2.getPerimeter()}`);
 
 
 
