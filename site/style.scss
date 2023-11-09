@@ -82,8 +82,6 @@ a {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 128px;
-    padding-bottom: 128px;
     &__item {
         height: 300px;
         color: #FFF;
