@@ -44,7 +44,7 @@ console.log(startStart());
 alert('задание 6'); //??
 function randomArr(n) {
     let getArr = [];
-    for (let i = 0; i < n /2; i++) {
+    for (let i = 0; i < n / 2; i++) {
         getArr.push(Math.floor(Math.random() * n));
     }
     return getArr;
@@ -54,3 +54,5 @@ function randomArr(n) {
 console.log(randomArr()) 
 randomArr(7);
 randomArr(12);
+
+
