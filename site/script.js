@@ -13,8 +13,7 @@ const search1 = 'ко';
 function searchStart(array, search1) {
     return array.filter((item) =>
         item.toLowerCase().startsWith(search1.toLowerCase())
-    )
-    
+    )  
 };
 console.log(searchStart());
 
