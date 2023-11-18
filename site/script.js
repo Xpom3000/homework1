@@ -39,20 +39,47 @@ function startStart(){
 }
 
 console.log(startStart());
-*/
+
 
 alert('задание 6'); //??
-function randomArr(n) {
-    let getArr = [];
+function getRandomArrNumbers(n) {
+    let result = [];
     for (let i = 0; i < n / 2; i++) {
-        getArr.push(Math.floor(Math.random() * n));
+        result.push(Math.floor(Math.random() * n));
     }
-    return getArr;
+    return result;
    
 }
 //console.log(getArr.reduce((n, i) => n + i) / getArr.length);
-console.log(randomArr()) 
-randomArr(7);
-randomArr(12);
+console.log(getRandomArrNumbers(7));
+console.log(getRandomArrNumbers(12));
+
+//getRandomArrNumbers(7);
+//getRandomArrNumbers(12);
+*/
+
+alert('задание 7');
+function randomResult(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+    
+}    
+alert(randomResult(prompt("Введите первое число"), prompt("Введите второе число")));
+
+/*
+alert('задание 8');
+let currentDate = new Date();
+console.log(currentDate);
 
 
+alert('задание 9');
+let currentDate = new Date();
+currentDate.setDate(73);
+    
+console.log(currentDate); 
+
+/*
+alert('задание 10');
+const currentDate1 = new Date();
+const options = { weekday: "long", yaer: "numeric", month: "long", day: "numeric" };
+console.log(currentDate1.toLocaleDateString("ru-Ru", options));
+*/
