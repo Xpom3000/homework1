@@ -53,8 +53,66 @@ function getRandomArrNumbers(n) {
    
 }
 //console.log(getArr.reduce((n, i) => n + i) / getArr.length);
-console.log(randomArr()) 
-randomArr(7);
-randomArr(12);
+console.log(getRandomArrNumbers(7));
+console.log(getRandomArrNumbers(12));
+
+//getRandomArrNumbers(7);
+//getRandomArrNumbers(12);
+
+
+alert('задание 7');//?
+function randomResult(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+    
+}    
+alert(randomResult(prompt("Введите первое число"), prompt("Введите второе число")));
+
+
+alert('задание 8');
+console.log(new Date());
+
+
+alert('задание 9');
+let currentDate1 = new Date();
+currentDate1.setDate(currentDate1.getDate() + 73);
+    
+console.log(currentDate1); 
+
+
+alert('задание 10');
+function formatDate(date) {
+    const days = [
+        "воскресенье",
+        "понедельник",
+        "вторник",
+        "среда",
+        "четверг",
+        "пятница",
+        "суббота",
+    ];
+
+    const months = [
+        "январь",
+        "февраль",
+        "март",
+        "апрель",
+        "май",
+        "июнь",
+        "июль",
+        "август",
+        "сентябрь",
+        "октябрь",
+        "ноябрь",
+        "декабрь",
+    ];
+
+    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} - это ${days[date.getDay()]}.
+    \nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
+console.log(formatDate(new Date()));
+
+
+
+
 
 
