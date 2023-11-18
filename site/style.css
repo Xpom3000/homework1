@@ -127,6 +127,7 @@ a {
   background-position: center;
   background-size: cover;
   padding-top: 282px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -137,6 +138,7 @@ a {
   gap: 32px;
   padding-right: 135px;
 }
+
 .for__box_2 {
   background-image: url(img/for_box.jpg);
   background-repeat: no-repeat;
@@ -154,6 +156,7 @@ a {
   flex-direction: column;
   gap: 32px;
 }
+
 
 .title {
   color: #FFF;
@@ -191,8 +194,10 @@ a {
     grid-column: 1/-1;
   }
   .for__box {
+
     padding-top: 179px;
     padding-bottom: 85px;
+
     display: flex;
     flex-direction: column;
   }
@@ -204,6 +209,7 @@ a {
     flex-direction: column;
     align-items: center;
   }
+
   .for__box_2 {
     padding-top: 51px;
     padding-bottom: 92px;
@@ -218,6 +224,7 @@ a {
     flex-direction: column;
     align-items: center;
   }
+
   .for__svg {
     width: 100%;
   }

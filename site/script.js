@@ -1,5 +1,6 @@
 
 alert('эзадание 1');
+
 let reg = 'js';
 reg = reg.toUpperCase();
 console.log(reg);
@@ -110,8 +111,6 @@ function formatDate(date) {
     \nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
 console.log(formatDate(new Date()));
-
-
 
 
 
