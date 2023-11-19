@@ -1,5 +1,45 @@
 
-alert('эзадание 1');
+alert('задание 1');
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+ ];
+ 
+console.log(people.sort());
+
+
+alert('задание 2');
+function isPositive(number) {
+    return number > 0;
+}
+
+function isMale() {
+    // писать код тут
+}
+    
+function filter(arr, ruleFunction) {
+    const output = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (ruleFunction(arr[i])) {
+            output.push(arr[i]);
+        }
+    }
+    return output;
+}
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+const people1 = [
+    {name: 'Глеб', gender: 'male'},
+    {name: 'Анна', gender: 'female'},
+    {name: 'Олег', gender: 'male'},
+    {name: 'Оксана', gender: 'female'}
+    ]
+console.log(filter(people, isMale))
+
+
+
+/*
 const fibonacci = [1, 1, 2, 3, 5, 8];
 
 // TODO: Допишите код, чтобы в консоль ниже выводились правильные значения
@@ -16,10 +56,21 @@ console.log(onlyBigFib); // => [5, 8]
 
 
 
+function functionWithCallback(callback) {
+    // Передаем в колбэк-функцию 2 аргумента строчки: "Глеб" и "Фокин"
+    callback("Глеб", "Фокин");
+  }
+  
+  functionWithCallback((name, surname) => {
+    // Внутри колбэк-функции мы можем использовать данные,
+    // которые передает в него код, который его вызывает, то есть functionWithCallback
+    // Название параметров значения не имеет, здесь я назвал их name и surname,
+    // потому что functionWithCallback передает в колбэк имя и фамилию
+    console.log(`Привет, ${name} ${surname}!`);
+  })
 
 
-
-
+*/
 /*
 
 let reg = 'js';
