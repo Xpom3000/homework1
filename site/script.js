@@ -1,119 +1,114 @@
 
 alert('эзадание 1');
-function  comparison (a, b) {
-    if (a <= b){
-     return a;
-        
-    }  else {
-    return b;
-    } 
- }
- 
- console.log(comparison(4, 6));
- console.log(comparison(7, 3));
-console.log(comparison(5, 5));
+let reg = 'js';
+reg = reg.toUpperCase();
+console.log(reg);
 
 
-alert('Задание 2');
-function printMessage(num) {
-    if (num % 2 == 0) { {
-            return "Число чётное";
-        }
+alert('эзадание 2'); 
+const array = ['Кошка', 'Кит', 'Комар', 'Носорог']; 
+const search1 = 'ко';
 
-    } else {{
-            return "Число нечётное";
-        }
-    }
-}
-
-console.log(printMessage(prompt("Введите число")));
- 
-
-alert('Задание 3');
-//3.1
-function multip(a) {
-    return a*a;
-}
-
-console.log(multip(6));
-console.log(multip(12));
-console.log(multip(10));
-
-//3.2
-function multip(a) {
-    return a*a;
-}
-
-multip(6);
-multip(12);
-multip(10);
-
-
-alert('Задание 4');
-function printMessage(num1) {
-    if (num1 < 0) {
-        return "Вы ввели неправильное значение";
-        
-    }if (num1 >= 0 && num1 <= 12) {
-        return "Привет, друг!";
-        
-    }if (num1 >= 13) {
-        return "Добро пожаловать!";
-        
-    }
-}
-
-alert(printMessage(prompt("Сколько Вам лет")));
-
-
-alert('Задание 5');
-const printMessage = (a, b) => {
-    if ( isNaN(a) || isNaN(b)) {
-        return "Одно или оба значения не являются числом";
-        
-    } else {
-        return a * b;
-    }    
-}
-alert(printMessage(prompt("Введите первое число"), prompt("Введите второе число")));
-
-
-alert('Задание 6');
-const num2 = (n) => {
-    if (isNaN(n)) {   
-        return 'Переданный параметр не является числом';
-    } if(n >= 0 && n <= 10) {
-        return n**3 ;
-    } 
-}
-alert(num2(prompt("Введите число")));
-
-
-alert('Задание 7');
-function squer () {
-    return this.radius **2 * 3.14;
-}  
-
-function perimetr () {
-    return this.radius * 2 * 3.14;
-}
-const circle1 = {
-    radius: 25,
-    getArea: squer,
-    getPerimeter: perimetr,
+function searchStart(array, search1) {
+    return array.filter((item) =>
+        item.toLowerCase().startsWith(search1.toLowerCase())
+    )
     
+};
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
+console.log(searchStart(array, search1))
+
+
+
+alert('задание 3');
+console.log(Math.floor(32.58884));
+console.log(Math.ceil(32.58884));
+console.log(Math.round(32.58884));
+
+
+alert('задание 4');
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+
+alert('задание 5');
+function startStart(){
+     return (1 + Math.floor(Math.random() * 11));
+}
+
+console.log(startStart());
+
+
+alert('задание 6'); //?? 
+function getRandomArrNumbers(n) {
+    //решить методом Map  
+    let result = [];
+    for (let i = 0; i < n / 2; i++) {
+        result.push(Math.floor(Math.random() * n));
     }
-    
-const circle2 = {
-    radius: 15,
-    getArea: squer,
-    getPerimeter: perimetr,
-    }
+    return result;
    
-console.log(`S1 = ${circle1.getArea()}`);
-console.log(`P1 = ${circle1.getPerimeter()}`);
-console.log(`S2 = ${circle2.getArea()}`);
-console.log(`P2 = ${circle2.getPerimeter()}`);
+}
+
+console.log(getRandomArrNumbers(7));
+console.log(getRandomArrNumbers(12));
+
+
+
+
+alert('задание 7');
+function randomResult(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+    
+}    
+alert(randomResult(Number(prompt("Введите первое число")), Number(prompt("Введите второе число"))));
+
+
+alert('задание 8');
+console.log(new Date());
+
+
+alert('задание 9');
+let currentDate1 = new Date();
+currentDate1.setDate(currentDate1.getDate() + 73);
+    
+console.log(currentDate1); 
+
+
+alert('задание 10');
+function formatDate(date) {
+    const days = [
+        "воскресенье",
+        "понедельник",
+        "вторник",
+        "среда",
+        "четверг",
+        "пятница",
+        "суббота",
+    ];
+
+    const months = [
+        "январь",
+        "февраль",
+        "март",
+        "апрель",
+        "май",
+        "июнь",
+        "июль",
+        "август",
+        "сентябрь",
+        "октябрь",
+        "ноябрь",
+        "декабрь",
+    ];
+
+    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} - это ${days[date.getDay()]}.
+    \nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
+console.log(formatDate(new Date()));
+
+
 
 
 
