@@ -28,7 +28,7 @@ function filter(arr, ruleFunction) {
     }
     return output;
 }
-console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+console.log(filter([3, -4, 1, 9], isPositive)); 
 
 const people1 = [
     {name: 'Глеб', gender: 'male'},
@@ -36,7 +36,7 @@ const people1 = [
     {name: 'Олег', gender: 'male'},
     {name: 'Оксана', gender: 'female'}
     ]
-console.log(filter(people1, isMale)) // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+console.log(filter(people1, isMale)) 
 
 
 alert('задание 3');
@@ -65,7 +65,6 @@ delayForSecond(function () {
 
 
 alert('задание 5');
-
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
