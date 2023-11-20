@@ -1,6 +1,4 @@
-
 //game1
-
 function seasons(munth) {
     if (munth >= 3 && munth <= 5) {
         return "Весна!";
@@ -17,20 +15,19 @@ function seasons(munth) {
     alert(seasons(prompt("Введите номер месяца")));
 }
 
-
 //game2
 
 function game2(){
     let fruits = ["Яблоко", "Груша", "Дыня", "Виноград", "Персик", "Апельсин", "Мандарин"];
     alert(fruits = fruits.sort(() => Math.random() - 0.5)); 
 
-    const firstElement = prompt("Чему равнялся первый элемент массива?")
-    const lastElement = prompt("Чему равнялся последний элемент массива?")
+    const firstElement = prompt("Чему равнялся первый элемент массива?").toLowerCase();
+    const lastElement = prompt("Чему равнялся последний элемент массива?").toLowerCase();
 
-    if (firstElement === fruits[0] && lastElement === fruits[fruits.length - 1]) {
+    if (firstElement === fruits[0].toLowerCase() && lastElement === fruits[fruits.length - 1].toLowerCase()) {
         alert("Поздравляем, вы угадали оба элемента");
         
-    } else if (firstElement === fruits[0] || lastElement === fruits[fruits.length - 1]) {
+    } else if (firstElement === fruits[0].toLowerCase() || lastElement === fruits[fruits.length - 1].toLowerCase()) {
         alert('Вы были близки к победе!');
         
     } else {
@@ -38,4 +35,3 @@ function game2(){
 
     }
 }
-

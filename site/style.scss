@@ -140,7 +140,6 @@ a {
         gap: 32px;
         padding-right: 135px;
     }
-
     &__box_2{
         background-image: url(img/for_box.jpg);
         background-repeat: no-repeat;
@@ -157,15 +156,13 @@ a {
         display: flex;
         flex-direction: column;
         gap: 32px;
-       // padding-right: 135px;
     }
-
 }
 .title {
     color: #FFF;
     font-size: 48px;
     font-weight: 700;
 }
-
+    
 
 @import 'mobile';
