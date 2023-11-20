@@ -61,7 +61,7 @@ function delayForSecond(callback) {
 
 delayForSecond(function () {
   console.log('Привет, Глеб!');
-})
+});
 
 
 alert('задание 5');
@@ -72,7 +72,7 @@ function delayForSecond1(cb) {
             cb();
         }
     }, 1000)
-}
+};
 
 function sayHi (name) {
     console.log(`Привет, ${name}!`);
