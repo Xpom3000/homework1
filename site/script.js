@@ -1,4 +1,5 @@
 
+
 alert('эзадание 1');
 let password = (1234);
 const password2 = prompt("Введите пороль");
@@ -60,3 +61,5 @@ default:
     console.log('Нет такого месяца')
     break;
 }  
+
+

@@ -82,10 +82,8 @@ a {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-
     padding-top: 128px;
     padding-bottom: 128px;
-
     &__item {
         height: 300px;
         color: #FFF;
@@ -134,9 +132,7 @@ a {
         background-position: center;
         background-size: cover;
         padding-top: 282px;
-
         padding-bottom: 282px;
-
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -147,31 +143,11 @@ a {
         gap: 32px;
         padding-right: 135px;
     }
-
-    &__box_2{
-        background-image: url(img/for_box.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding-top: 282px;
-        padding-bottom: 282px;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__header_2 {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
 }
 .title {
     color: #FFF;
     font-size: 48px;
     font-weight: 700;
 }
-
 
 @import 'mobile';
