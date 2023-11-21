@@ -1,4 +1,7 @@
+
+
 //game1
+
 function seasons(munth) {
     if (munth >= 3 && munth <= 5) {
         return "Весна!";
@@ -14,6 +17,7 @@ function seasons(munth) {
     }    
     alert(seasons(prompt("Введите номер месяца")));
 }
+
 
 //game2
 
@@ -35,3 +39,4 @@ function game2(){
 
     }
 }
+

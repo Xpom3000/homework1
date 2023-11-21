@@ -1,115 +1,81 @@
 
-alert('эзадание 1');
-let reg = 'js';
-reg = reg.toUpperCase();
-console.log(reg);
+alert('задание 1');
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+ ];
+ 
+console.log(people.sort((a, b) => a.age - b.age ));
 
 
-alert('эзадание 2'); 
-const array = ['Кошка', 'Кит', 'Комар', 'Носорог']; 
-const search1 = 'ко';
+alert('задание 2');
+function isPositive(number) {
+    return number > 0;
+}
 
-function searchStart(array, search1) {
-    return array.filter((item) =>
-        item.toLowerCase().startsWith(search1.toLowerCase())
-    )
+function isMale(people1) {
+    return people1.gender === 'male';
+}
     
-};
-console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
-console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
-console.log(searchStart(array, search1))
+function filter(arr, ruleFunction) {
+    const output = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (ruleFunction(arr[i])) {
+            output.push(arr[i]);
+        }
+    }
+    return output;
+}
+console.log(filter([3, -4, 1, 9], isPositive)); 
 
+const people1 = [
+    {name: 'Глеб', gender: 'male'},
+    {name: 'Анна', gender: 'female'},
+    {name: 'Олег', gender: 'male'},
+    {name: 'Оксана', gender: 'female'}
+    ]
+console.log(filter(people1, isMale)) 
 
 
 alert('задание 3');
-console.log(Math.floor(32.58884));
-console.log(Math.ceil(32.58884));
-console.log(Math.round(32.58884));
+function counter() {
+    let time = 0;
+    const interval = setInterval(() => {
+        time += 3;
+        console.log(new Date());
+        if (time >= 30) {
+            clearInterval(interval);
+            console.log('30 секунд прошло.')
+        }
+    }, 3000);
+}
+counter();
 
 
 alert('задание 4');
-console.log(Math.min(52, 53, 49, 77, 21, 32));
-console.log(Math.max(52, 53, 49, 77, 21, 32));
+function delayForSecond(callback) {
+    setTimeout(callback, 1000)
+}
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+});
 
 
 alert('задание 5');
-function startStart(){
-     return (1 + Math.floor(Math.random() * 11));
+function delayForSecond1(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) {
+            cb();
+        }
+    }, 1000)
+};
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
 }
 
-console.log(startStart());
-
-
-alert('задание 6'); //?? 
-function getRandomArrNumbers(n) {
-    //решить методом Map  
-    let result = [];
-    for (let i = 0; i < n / 2; i++) {
-        result.push(Math.floor(Math.random() * n));
-    }
-    return result;
-   
-}
-
-console.log(getRandomArrNumbers(7));
-console.log(getRandomArrNumbers(12));
-
-
-
-
-alert('задание 7');
-function randomResult(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-    
-}    
-alert(randomResult(Number(prompt("Введите первое число")), Number(prompt("Введите второе число"))));
-
-
-alert('задание 8');
-console.log(new Date());
-
-
-alert('задание 9');
-let currentDate1 = new Date();
-currentDate1.setDate(currentDate1.getDate() + 73);
-    
-console.log(currentDate1); 
-
-
-alert('задание 10');
-function formatDate(date) {
-    const days = [
-        "воскресенье",
-        "понедельник",
-        "вторник",
-        "среда",
-        "четверг",
-        "пятница",
-        "суббота",
-    ];
-
-    const months = [
-        "январь",
-        "февраль",
-        "март",
-        "апрель",
-        "май",
-        "июнь",
-        "июль",
-        "август",
-        "сентябрь",
-        "октябрь",
-        "ноябрь",
-        "декабрь",
-    ];
-
-    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} - это ${days[date.getDay()]}.
-    \nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-}
-console.log(formatDate(new Date()));
-
-
-
-
-
-
+delayForSecond1(() => sayHi('Глеб'));
